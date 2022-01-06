@@ -8,12 +8,14 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     SequelizeModule.forRoot({
       dialect: 'postgres',
-      host: 'localhost',
+      host: 'ec2-44-194-101-60.compute-1.amazonaws.com',
       port: 5432,
-      username: 'postgres',
-      password: 'root',
-      database: 'love',
+      username: 'nozandputlsbxs',
+      password:
+        'e07b4c1e99f0630c4d2dfb1922ef474e099f8a4b6461f195decb999aae2e0b08',
+      database: 'dcm4j90eu5e8g0',
       models: [User],
+      synchronize: true,
       autoLoadModels: true,
     }),
     UsersModule,
